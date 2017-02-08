@@ -125,4 +125,5 @@ class Trie:
         else:
             searchResult[0].children[word[searchResult[1]]].data = None
             searchResult[0].children[word[searchResult[1]]].leaf = False
+        self.count -= 1
         #print searchResult[0].children, searchResult[0].leaf, searchResult[0].data
